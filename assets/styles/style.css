@@ -39,6 +39,7 @@ p {
 
 main .preview {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: #032535;
   /* box-shadow: 0px 3px 30px #0a1826; */
@@ -54,4 +55,8 @@ main .preview .title_header {
 
 main .preview .title_desc {
   font-size: 41px;
+}
+
+main .preview .logo img {
+  width: 20vw;
 }
