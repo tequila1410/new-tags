@@ -20,7 +20,7 @@
             </div>
 
             <div class="nav-link">
-                <a href="#">Элементы разметки</a>
+                <a href="#id1">Элементы разметки</a>
                 <a href="#" class="edditional-tag">Дополнительные теги</a>
                 <a href="#">Новые технологии</a>
             </div>
@@ -51,13 +51,14 @@
         </div>
 
         <div class="information">
-            <h1>Теги HTML5 описывающие элементы разметки</h1>
+            <h1 id="id1">Теги HTML5 описывающие элементы разметки</h1>
             <p class="h-desc">HTML5 предлагает новые элементы для лучшего структурирования документа:</p>
 
             <p>
                 <sapn class="tag">&ltheader&gt; &lt;/header&gt;</sapn>
                 — теги обрамляющие элементы дизайна верхней части сайта, так называемая "шапка страницы". Также теги
-                header можно использовать как верхнюю часть тега <span class="simple-tag">section</span>.
+                <span class="simple-tag">header</span> можно использовать как верхнюю часть тега
+                <span class="simple-tag">section</span>.
             </p>
             <div class="code-card">
                 <div class="header">
@@ -116,29 +117,21 @@
 
             <p>
                 <span class="tag">&lt;aside&gt; &lt;/aside&gt;</span> — теги обрамляющие сайдбар. Сайдбар — это так
-                называемая "боковая панель", которая обычно содержит блокие
+                называемая "боковая панель", которая обычно содержит блокие рубрик (категорий), облака тегов (меток),
+                список последних записей и т.п. Тегами <span class="simple-tag">aside</span> также можно обрамлять
+                счетчики, виджеты,
+                социальные кнопки.
             </p>
-            <div class="code-card">
-                <div class="header">
-                    <p>Применение</p>
-                    <p>&lt;/&gt;</p>
-                </div>
-                <div class="main">
-<pre>
-    &lt;header&gt;
-     &lt;div class="header-bg"&gt;
-      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
-     &lt;/div&gt
-    &lt/header&gt
-</pre>
-                </div>
-            </div>
+
+            <br>
 
             <p>
                 <span class="tag">&lt;footer&gt; &lt;/footer&gt;</span> — теги обрамляющие нижнюю часть сайта, так
                 называемый "подвал страницы", который может содержать имя автора (компании), контакты (адреса,
-                телефоны), правовую информацию (копирайты) и т.п. Также теги footer можно использовать как
-                нижнюю часть тега section, т.е. сами теги footer будут находиться между тегами section.
+                телефоны), правовую информацию (копирайты) и т.п. Также теги <span class="simple-tag">footer</span>
+                можно использовать как
+                нижнюю часть тега <span class="simple-tag">section</span>, т.е. сами теги <span class="simple-tag">footer</span>
+                будут находиться между тегами <span class="simple-tag">section</span>.
             </p>
             <div class="code-card">
                 <div class="header">
@@ -162,7 +155,8 @@
                 главу можно поместить между этими тегами. Или если вы нажмете на ссылку в сайдбаре
                 (например по ссылке какой-нибудь рубрики), то появится страница на которой будут ссылки с описаниями,
                 ведущие на статьи
-                принадлежащие к данной рубрике, так вот ссылки с описаниями можно обрамлять тегами section, а также
+                принадлежащие к данной рубрике, так вот ссылки с описаниями можно обрамлять тегами <span
+                    class="simple-tag">section</span>, а также
                 товары с описаниями в
                 интернет магазине, комментарии к записям, комментарии к теме на форумах и т.д.
             </p>
@@ -184,7 +178,8 @@
 
             <p>
                 <span class="tag">&lt;mark&gt; &lt;/mark&gt;</span> — — текст находящийся между этими тегами становится
-                "выделенным". Одно из предназначений тегов mark, обрамлять слова в тексте, которые например совпадают со
+                "выделенным". Одно из предназначений тегов <span class="simple-tag">mark</span>, обрамлять слова в
+                тексте, которые например совпадают со
                 словом введённым пользователем в поисковую строку.
             </p>
             <div class="code-card">
@@ -205,9 +200,11 @@
 
             <p>
                 <span class="tag">&lt;time&gt; &lt;/time&gt;</span> — теги предназначены для создания дат и/или времени
-                в формате ISO вида: YYYY-MM-DDThh:mm:ss, такой формат понятен компьютерным программам. Теги time могут
+                в формате <span class="simple-tag">ISO</span> вида: <span class="simple-tag">YYYY-MM-DDThh:mm:ss</span>,
+                такой формат понятен компьютерным программам. Теги <span class="simple-tag">time</span> могут
                 обрамлять дату или текст, если тег обрамляет текст, то в него добавляют атрибут
-                datetime, значением которого выступает дата и/или время в формате ISO.
+                <span class="simple-tag">datetime</span>, значением которого выступает дата и/или время в формате <span
+                    class="simple-tag">ISO</span>.
             </p>
             <div class="code-card">
                 <div class="header">
@@ -247,7 +244,8 @@
 
             <p>
                 <span class="tag">&lt;summary&gt; &lt;/summary&gt;</span> — теги обрамляют заголовок, если по нему
-                щелкнуть то появится текст (можно использовать в качестве спойлера), находятся между тегами details.
+                щелкнуть то появится текст (можно использовать в качестве спойлера), находятся между тегами <span
+                    class="simple-tag">details</span>.
             </p>
 
             <hr class="hr1">
@@ -259,8 +257,74 @@
         </div>
 
         <div class="information">
+            <h1>Дополнительные теги языка HTML5</h1>
+            <p class="h-desc">Список новых тегов HTML5, обогощающих язык:</p>
+
+            <p>
+                <sapn class="tag">&lt;meter&gt; &lt;/meter&gt;</sapn>
+                — теги предназначены для вывода статического индикатора шкалы, при котором результат измерения не
+                меняется. Для работы нужно минимальное и максимальное значения.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <hr class="hr1">
 
         </div>
+
+        <div class="container hr">
+            <hr class="hr2">
+        </div>
+
+        <div class="information">
+            <h1>Теги HTML5 описывающие новые технологии</h1>
+            <p class="h-desc">В HTML5 появилась возможность использования множества технологий и API, которые являются
+                частью языка
+                HTML5, а не сторонними плагинами.</p>
+
+            <p>
+                <sapn class="tag">&lt;embed&gt; &lt;/embed&gt;</sapn>
+                — тег предназначен для определения контейнеров для внешних приложений (like plug-ins) , (like plug-ins).
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <hr class="hr1">
+
+        </div>
+
+        <div class="container hr">
+            <hr class="hr2">
+        </div>
+
+        <div class="information"></div>
+
     </main>
 
     <footer class="footer">
@@ -268,5 +332,7 @@
         <p>ХНУРЕ, 2020</p>
     </footer>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </body>
 </html>
