@@ -41,6 +41,10 @@ header.header {
     /*font-size: 14px;*/
 }
 
+header .close-nav {
+    display: none;
+}
+
 header .header-container a {
     font-size: 16px;
     font-weight: normal;
@@ -169,7 +173,7 @@ main .preview__description p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 32px;
     height: 33px;
     background: rgba(45, 167, 172, 0.4);
     font-family: 'Lato', sans-serif;
@@ -212,12 +216,35 @@ hr.hr2 {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
 
-    header.header {
-        display: none;
-    }
-
     .container {
         padding: 0 10px;
+    }
+
+    header.header {
+        /*display: none;*/
+        height: 65px;
+    }
+
+    header .close-nav {
+        display: block;
+        color: #f5f1e7;
+    }
+
+    header .header-container {
+        font-size: 18px;
+        padding: 0 24px;
+        height: 65px;
+    }
+
+    header .header-container .nav-link {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 65px;
+        left: 0;
+        z-index: 1004;
+        background: #032535;
+        width: 100%;
     }
 
     main .preview__main {
@@ -238,6 +265,10 @@ hr.hr2 {
 
     .information {
         padding: 90px 15px 7px;
+    }
+
+    .information h1 {
+        font-size: 32px;
     }
 
     .footer {

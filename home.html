@@ -19,6 +19,8 @@
                 <a id="link-home">Главная</a>
             </div>
 
+            <div id="close-nav" class="close-nav">X</div>
+
             <div class="nav-link">
                 <a id="link1">Элементы разметки</a>
                 <a id="link2" class="edditional-tag">Дополнительные теги</a>
@@ -273,7 +275,7 @@
 <pre>
     &lt;label for="fuel"&gt;Fuel level:&lt;/label&gt;
      &lt;meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50"&gt;at 50/100&lt;/meter&gt;
-     
+
 </pre>
                 </div>
             </div>
@@ -599,6 +601,11 @@
                 });
             });
         }
+
+        document.getElementById('close-nav').addEventListener('click', function() {
+            const navEl = document.querySelector('.nav-link');
+            navEl.style.display = navEl.style.display === 'flex' ? 'none' : 'flex';
+        })
     })()
 </script>
 
