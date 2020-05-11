@@ -260,7 +260,7 @@
             <p class="h-desc">Список новых тегов HTML5, обогощающих язык:</p>
 
             <p>
-                <sapn class="tag">&lt;meter&gt; &lt;/meter&gt;</sapn>
+                <span class="tag">&lt;meter&gt; &lt;/meter&gt;</span>
                 — теги предназначены для вывода статического индикатора шкалы, при котором результат измерения не
                 меняется. Для работы нужно минимальное и максимальное значения.
             </p>
@@ -278,6 +278,179 @@
                 </div>
             </div>
 
+            <p>
+                <span class="tag">&lt;progress&gt; &lt;/progress&gt;</span>
+                — теги предназначены для вывода динамического индикатора шкалы (например шкалы загрузки файла), при котором результат измерения меняется в реальном времени.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;body&gt;
+     &lt;p&gt;Пожалуйста, подождите, фотографии загружаются.&lt;/p&gt;
+      &lt;progress max="100" value="25"&gt;
+       Загружено на &lt;span id="value"&gt;25&lt;/span&gt;%
+      &lt;/progress&gt; 
+    &lt;/body&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;command /&gt;</span>
+                — тег должен находиться между тегами <span class="simple-tag">menu</span>, используется при создании сценариев на <span class="simple-tag">JavaScript</span>.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;menu&gt;&lt;/menu&gt;</span>
+                — между этими тегами помещают тег <span class="simple-tag">command</span>.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;output&gt;&lt;/output&gt;</span>
+                — теги предназначены для вывода работы скрипта.
+            </p>
+
+            <br>
+            
+            <p>
+                <span class="tag">&lt;datalist&gt;&lt;/output&gt;</span>
+                — теги предназначены для создания списка, который будет выводится при наборе в текстовом поле.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;label for="ice-cream-choice"&gt;Choose a flavor:&lt;/label&gt;
+     &lt;input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/&gt;
+      &lt;datalist id="ice-cream-flavors"&gt;
+       &lt;option value="Chocolate"&gt;
+       &lt;option value="Coconut"&gt; 
+       &lt;option value="Mint"&gt;
+       &lt;option value="Strawberry"&gt;
+       &lt;option value="Vanilla"&gt;
+      &lt;/datalist&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;figure&gt;&lt;/figure&gt;</span>
+                — теги группируют различные объекты страницы имеющие свои описания, например изображения с описанием, товары с описанием и т.д.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;figcaption&gt;&lt;/figcaption&gt;</span>
+                — теги обрамляют описание какого-либо объекта (например изображения), находятся  между тегами <span class="simple-tag">figure</span>.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;figure&lt;
+     &lt;img src="macaque.jpg" alt="Макака на дереве"&gt;
+      &lt;figcaption&gt;
+       Наглая макака из Борнео.
+       Фото&lt;a href="…"&gt;Ричарда Кларка&lt;/a&gt; 
+      &lt;/figcaption&gt;
+    &lt;/figure&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;keygen /&gt;</span>
+                — тег используется для генерации открытых/закрытых пар ключей, шифрования/расшифровки данных, создания/проверки цифровой подписи.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;form action="demo_keygen.asp" method="get"&lt;
+     Имя пользователя: &lt;input type="text" name="usr_name"&gt;
+     Шифрование: &lt;keygen name="защита"&gt;
+     &lt;input type="submit"&gt; 
+    &lt;/form&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;hgroup&gt;&lt;/hgroup&gt;</span>
+                — теги предназначены для группировки заголовков <span class="simple-tag">h*</span>.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;hgroup&lt;
+     &lt;h1&gt;Главный заголовок&lt;/h1&gt;
+     &lt;h2&gt;Вторичный заголовок&lt;/h2&gt;
+    &lt;/hgroup&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;ruby&gt;&lt;/ruby&gt;</span>
+                — теги обрамляют текст и аннотацию к нему.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;rt&gt;&lt;/rt&gt;</span>
+                — теги находятся между тегами <span class="simple-tag">ruby</span>, предназначены для обрамления аннотации.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;ruby&lt;
+     漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rp&gt;kan&lt;/rp&gt;&lt;rp&gt;)&lt;/rp&gt;
+     字 &lt;rp&gt;(&lt;/rp&gt;&lt;rp&gt;ji&lt;/rp&gt;&lt;rp&gt;)&lt;/rp&gt;
+    &lt;/ruby&gt;
+</pre>
+                </div>
+            </div>
+
+            
+            <p>
+                <span class="tag">&lt;rp&gt;&lt;/rp&gt;</span>
+                — теги предназначены для браузеров которые не поддерживают теги <span class="simple-tag">ruby</span>.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;wbr /&gt;</span>
+                — тег указывает браузеру в каком месте переносить слово, если это слово не вмещается в окно браузера.
+            </p>
+
             <hr class="hr1">
 
         </div>
@@ -288,13 +461,34 @@
 
         <div id="id3" class="information">
             <h1>Теги HTML5 описывающие новые технологии</h1>
-            <p class="h-desc">В HTML5 появилась возможность использования множества технологий и API, которые являются
+            <p class="h-desc">В HTML5 появилась возможность использования множества технологий и <span class="simple-tag">API</span>, которые являются
                 частью языка
                 HTML5, а не сторонними плагинами.</p>
 
             <p>
-                <sapn class="tag">&lt;embed&gt; &lt;/embed&gt;</sapn>
-                — тег предназначен для определения контейнеров для внешних приложений (like plug-ins) , (like plug-ins).
+                <span class="tag">&lt;embed&gt; &lt;/embed&gt;</span>
+                — тег предназначен для определения контейнеров для внешних приложений <span class="simple-tag">(like plug-ins)</span>, <span class="simple-tag">(like plug-ins)</span>.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;source /&gt;</span>
+                — тег предназначен для указания пути к аудио/видео файлам, находится внутри тегов <span class="simple-tag">audio</span> и <span class="simple-tag">video</span>.
+            </p>
+            
+            <br>
+
+            <p>
+                <span class="tag">&lt;track /&gt;</span>
+                — тег предназначен для указания текстовой дорожки для медийных элементов, находится внутри тегов <span class="simple-tag">audio</span> и <span class="simple-tag">video</span>.
+            </p>
+
+            <br>
+
+            <p>
+                <span class="tag">&lt;audio&gt;&lt;/audio&gt;</span>
+                — теги предназначены для воспроизведения аудиофайлов, без использования сторонних программ.
             </p>
             <div class="code-card">
                 <div class="header">
@@ -303,14 +497,56 @@
                 </div>
                 <div class="main">
 <pre>
-    &lt;header&gt;
-     &lt;div class="header-bg"&gt;
-      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
-     &lt;/div&gt
-    &lt/header&gt
+    &lt;audio controls&gt;
+     &lt;source src="horse.ogg" type="audio/ogg"&gt;
+     &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+     Your browser does not support the audio element.
+    &lt;/audio&gt;
 </pre>
                 </div>
             </div>
+
+            <p>
+                <span class="tag">&lt;video&gt;&lt;/video&gt;</span>
+                — теги предназначены для воспроизведения видеофайлов, без использования сторонних программ.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;video width="320" height="240" controls&gt;
+     &lt;source src="/html/movie.mp4" type="video/mp4"&gt;
+     &lt;source src="/html/movie.ogg" type="video/ogg"&gt;
+     Your browser does not support the video tag.
+    &lt;/video&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;canvas&gt;&lt;/canvas&gt;</span>
+                — теги предназначены для создания специальной области на сайте, в которой можно создавать векторные фигуры и с помощью языка программирования <span class="simple-tag">JavaScript</span>, манипулировать ими.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;
+    &lt;/canvas&gt;
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;svg&gt;&lt;/svg&gt;</span>
+                — теги предназначены для рисования масштабируемой векторной графики.
+            </p>
 
             <hr class="hr1">
 
