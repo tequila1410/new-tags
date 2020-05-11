@@ -16,13 +16,13 @@
     <header class="header">
         <div class="header-container container">
             <div class="main-link">
-                <a href="#">Главная</a>
+                <a id="link-home">Главная</a>
             </div>
 
             <div class="nav-link">
-                <a href="#id1">Элементы разметки</a>
-                <a href="#" class="edditional-tag">Дополнительные теги</a>
-                <a href="#">Новые технологии</a>
+                <a id="link1">Элементы разметки</a>
+                <a id="link2" class="edditional-tag">Дополнительные теги</a>
+                <a id="link3">Новые технологии</a>
             </div>
         </div>
     </header>
@@ -50,8 +50,8 @@
             </div>
         </div>
 
-        <div class="information">
-            <h1 id="id1">Теги HTML5 описывающие элементы разметки</h1>
+        <div id="id1" class="information">
+            <h1>Теги HTML5 описывающие элементы разметки</h1>
             <p class="h-desc">HTML5 предлагает новые элементы для лучшего структурирования документа:</p>
 
             <p>
@@ -256,7 +256,7 @@
             <hr class="hr2">
         </div>
 
-        <div class="information">
+        <div id="id2" class="information">
             <h1>Дополнительные теги языка HTML5</h1>
             <p class="h-desc">Список новых тегов HTML5, обогощающих язык:</p>
 
@@ -289,7 +289,7 @@
             <hr class="hr2">
         </div>
 
-        <div class="information">
+        <div id="id3" class="information">
             <h1>Теги HTML5 описывающие новые технологии</h1>
             <p class="h-desc">В HTML5 появилась возможность использования множества технологий и API, которые являются
                 частью языка
@@ -351,5 +351,23 @@
         }
     });
 </script>
+
+<script>
+    (function() {
+        document.getElementById('link-home').addEventListener('click', function () {
+            document.querySelector('body').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        for(let i = 1; i < 4; i++) {
+            document.getElementById(`link${i}`).addEventListener('click', function () {
+                document.querySelector(`#id${i}`).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+    })()
+</script>
+
 </body>
 </html>

@@ -67,6 +67,7 @@ header .header-container.shrink {
 }
 
 header.header a {
+    cursor: pointer;
     text-decoration: none;
     color: #f5f1e7;
 }
