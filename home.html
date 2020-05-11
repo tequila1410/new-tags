@@ -1,41 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Новые элементы в HTML5</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-container">
-          <div class="main-link">
-            <a href="#">Главная</a>
-          </div>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-          <div class="nav-link">
-            <a href="#">Элементы разметки</a>
-            <a href="#" class="edditional-tag">Дополнительные теги</a>
-            <a href="#">Новые технологии</a>
-          </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-container container">
+            <div class="main-link" style="position: relative">
+                <a href="#">Главная</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="#">Элементы разметки</a>
+                <a href="#" class="edditional-tag">Дополнительные теги</a>
+                <a href="#">Новые технологии</a>
+            </div>
         </div>
-      </header>
+    </header>
 
-      <main class="main">
+    <main class="main">
         <div class="preview">
-          <div class="title">
-            <p class="title_header">Новые элементы в HTML5</p>
-            <p class="title_desc">Подробное руководство</p>
-          </div>
-
-          <div class="logo">
-              <img src="assets/h.png" alt="HTML5 logo">
-          </div>
+            <div class="preview__main">
+                <div class="title">
+                    <p class="title_header">Новые элементы в HTML5</p>
+                    <p class="title_desc">Подробное руководство</p>
+                </div>
+                <div class="logo">
+                    <img src="assets/logo.svg" alt="HTML5 logo">
+                </div>
+            </div>
+            <div class="preview__description">
+                <div class="line">
+                    <p>Новые теги в HTML5 — это теги, семантически описывающие структуру страницы, предназначены для
+                        того
+                        чтобы компьютерная программа (например поисковый робот), смогла отличать основной контент, от
+                        остальных частей страницы: шапки, подвала, меню, cайдбара, повторяющихся (динамических) блоков и
+                        т.д.
+                        Также идёт семантическое разделение на уровне основного контента (текста старницы).</p>
+                </div>
+            </div>
         </div>
-      </main>
 
-      <footer class="footer"></footer>
-    </div>
-  </body>
+        <div class="information">
+            <h1>Теги HTML5 описывающие элементы разметки</h1>
+            <p class="h-desc">HTML5 предлагает новые элементы для лучшего структурирования документа:</p>
+
+            <p>
+                <sapn class="tag">&ltheader&gt; &lt;/header&gt;</sapn>
+                — теги обрамляющие элементы дизайна верхней части сайта, так называемая "шапка страницы". Также теги
+                header можно использовать как верхнюю часть тега <span class="simple-tag">section</span>.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;nav&gt; &lt;/nav&gt;</span> — теги обрамляющие основное меню на сайте.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;article&gt; &lt;/article&gt;</span> — теги обрамляющие основной контент страницы:
+                статью, запись в блоге, новость, первую запись форума и т.п.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;aside&gt; &lt;/aside&gt;</span> — теги обрамляющие сайдбар. Сайдбар — это так
+                называемая "боковая панель", которая обычно содержит блокие
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;footer&gt; &lt;/footer&gt;</span> — теги обрамляющие нижнюю часть сайта, так
+                называемый "подвал страницы", который может содержать имя автора (компании), контакты (адреса,
+                телефоны), правовую информацию (копирайты) и т.п. Также теги footer можно использовать как
+                нижнюю часть тега section, т.е. сами теги footer будут находиться между тегами section.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;section&gt; &lt;/section&gt;</span> — теги обрамляющие повторяющиеся части
+                страницы или основного контента, например если на странице находятся несколько глав рассказа, то каждую
+                главу можно поместить между этими тегами. Или если вы нажмете на ссылку в сайдбаре
+                (например по ссылке какой-нибудь рубрики), то появится страница на которой будут ссылки с описаниями,
+                ведущие на статьи
+                принадлежащие к данной рубрике, так вот ссылки с описаниями можно обрамлять тегами section, а также
+                товары с описаниями в
+                интернет магазине, комментарии к записям, комментарии к теме на форумах и т.д.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;mark&gt; &lt;/mark&gt;</span> — — текст находящийся между этими тегами становится
+                "выделенным". Одно из предназначений тегов mark, обрамлять слова в тексте, которые например совпадают со
+                словом введённым пользователем в поисковую строку.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;time&gt; &lt;/time&gt;</span> — теги предназначены для создания дат и/или времени
+                в формате ISO вида: YYYY-MM-DDThh:mm:ss, такой формат понятен компьютерным программам. Теги time могут
+                обрамлять дату или текст, если тег обрамляет текст, то в него добавляют атрибут
+                datetime, значением которого выступает дата и/или время в формате ISO.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;details&gt; &lt;/details&gt;</span> — теги предназначены для хранения информации,
+                которая либо скрыта, либо отображена.
+            </p>
+            <div class="code-card">
+                <div class="header">
+                    <p>Применение</p>
+                    <p>&lt;/&gt;</p>
+                </div>
+                <div class="main">
+<pre>
+    &lt;header&gt;
+     &lt;div class="header-bg"&gt;
+      &lt;img src="images/header-title.png" alt="Как поймать льва в пустыне" /&gt;
+     &lt;/div&gt
+    &lt/header&gt
+</pre>
+                </div>
+            </div>
+
+            <p>
+                <span class="tag">&lt;summary&gt; &lt;/summary&gt;</span> — теги обрамляют заголовок, если по нему
+                щелкнуть то появится текст (можно использовать в качестве спойлера), находятся между тегами details.
+            </p>
+
+            <hr class="hr1">
+
+        </div>
+
+        <div class="container hr">
+            <hr class="hr2">
+        </div>
+
+        <div class="information">
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Автор сайта: Дараган Элина, ст. гр. ВПВПС-17-1</p>
+        <p>ХНУРЕ, 2020</p>
+    </footer>
+</div>
+</body>
 </html>
