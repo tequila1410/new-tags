@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -175,6 +179,7 @@ main .preview__description p {
 }
 
 .code-card .main {
+    overflow-x: scroll;
     background: rgba(231, 231, 231, 0.5);
     border: 1px solid rgba(45, 167, 172, 0.4);
     box-sizing: border-box;
@@ -202,4 +207,41 @@ hr.hr2 {
     height: 175px;
     background: #032535;
     box-shadow: 0 3px 30px #0A1826;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    header.header {
+        display: none;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    main .preview__main {
+        padding: 100px 15px;
+    }
+
+    .preview__main .logo {
+        display: none;
+    }
+
+    main .preview__description {
+        padding: 90px 10px;
+    }
+
+    main .preview__description p {
+        padding: 20px 10px;
+    }
+
+    .information {
+        padding: 90px 15px 7px;
+    }
+
+    .footer {
+        padding: 0 15px;
+    }
+
 }
