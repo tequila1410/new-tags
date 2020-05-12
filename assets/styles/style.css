@@ -41,7 +41,7 @@ header.header {
     /*font-size: 14px;*/
 }
 
-header .close-nav {
+header .menu {
     display: none;
 }
 
@@ -225,9 +225,8 @@ hr.hr2 {
         height: 65px;
     }
 
-    header .close-nav {
+    header .menu {
         display: block;
-        color: #f5f1e7;
     }
 
     header .header-container {

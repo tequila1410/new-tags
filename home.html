@@ -643,17 +643,11 @@
             document.getElementById(`link${i}`).addEventListener('click', function () {
                 const event = new Event('click');
                 document.querySelector('.menu').dispatchEvent(event);
-                // document.querySelector('.nav-link').style.display = 'none';
                 document.querySelector(`#id${i}`).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         }
-
-        // document.getElementById('close-nav').addEventListener('click', function() {
-        //     const navEl = document.querySelector('.nav-link');
-        //     navEl.style.display = navEl.style.display === 'flex' ? 'none' : 'flex';
-        // })
     })()
 </script>
 
