@@ -19,7 +19,11 @@
                 <a id="link-home">Главная</a>
             </div>
 
-            <div id="close-nav" class="close-nav">X</div>
+            <div class="menu">
+                <span class="menu-global menu-top"></span>
+                <span class="menu-global menu-middle"></span>
+                <span class="menu-global menu-bottom"></span>
+            </div>
 
             <div class="nav-link">
                 <a id="link1">Элементы разметки</a>
@@ -584,6 +588,47 @@
         function getCurrentScroll() {
             return window.pageYOffset || document.documentElement.scrollTop;
         }
+
+
+
+
+
+
+        var Menu = {
+
+            el: {
+                ham: $('.menu'),
+                menuTop: $('.menu-top'),
+                menuMiddle: $('.menu-middle'),
+                menuBottom: $('.menu-bottom')
+            },
+
+            init: function() {
+                Menu.bindUIactions();
+            },
+
+            bindUIactions: function() {
+                Menu.el.ham
+                    .on(
+                        'click',
+                        function(event) {
+                            Menu.activateMenu(event);
+                            event.preventDefault();
+                            const navEl = document.querySelector('.nav-link');
+                            navEl.style.display = navEl.style.display === 'flex' ? 'none' : 'flex';
+                        }
+                    );
+            },
+
+            activateMenu: function() {
+                Menu.el.menuTop.toggleClass('menu-top-click');
+                Menu.el.menuMiddle.toggleClass('menu-middle-click');
+                Menu.el.menuBottom.toggleClass('menu-bottom-click');
+            }
+        };
+
+        Menu.init();
+
     });
 </script>
 
@@ -596,16 +641,19 @@
         });
         for(let i = 1; i < 4; i++) {
             document.getElementById(`link${i}`).addEventListener('click', function () {
+                const event = new Event('click');
+                document.querySelector('.menu').dispatchEvent(event);
+                // document.querySelector('.nav-link').style.display = 'none';
                 document.querySelector(`#id${i}`).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         }
 
-        document.getElementById('close-nav').addEventListener('click', function() {
-            const navEl = document.querySelector('.nav-link');
-            navEl.style.display = navEl.style.display === 'flex' ? 'none' : 'flex';
-        })
+        // document.getElementById('close-nav').addEventListener('click', function() {
+        //     const navEl = document.querySelector('.nav-link');
+        //     navEl.style.display = navEl.style.display === 'flex' ? 'none' : 'flex';
+        // })
     })()
 </script>
 
