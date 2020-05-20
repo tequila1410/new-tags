@@ -299,7 +299,7 @@
      &lt;p&gt;Пожалуйста, подождите, фотографии загружаются.&lt;/p&gt;
       &lt;progress max="100" value="25"&gt;
        Загружено на &lt;span id="value"&gt;25&lt;/span&gt;%
-      &lt;/progress&gt; 
+      &lt;/progress&gt;
     &lt;/body&gt;
 </pre>
                 </div>
@@ -325,7 +325,7 @@
             </p>
 
             <br>
-            
+
             <p>
                 <span class="tag">&lt;datalist&gt;&lt;/output&gt;</span>
                 — теги предназначены для создания списка, который будет выводится при наборе в текстовом поле.
@@ -341,7 +341,7 @@
      &lt;input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/&gt;
       &lt;datalist id="ice-cream-flavors"&gt;
        &lt;option value="Chocolate"&gt;
-       &lt;option value="Coconut"&gt; 
+       &lt;option value="Coconut"&gt;
        &lt;option value="Mint"&gt;
        &lt;option value="Strawberry"&gt;
        &lt;option value="Vanilla"&gt;
@@ -372,7 +372,7 @@
      &lt;img src="macaque.jpg" alt="Макака на дереве"&gt;
       &lt;figcaption&gt;
        Наглая макака из Борнео.
-       Фото&lt;a href="…"&gt;Ричарда Кларка&lt;/a&gt; 
+       Фото&lt;a href="…"&gt;Ричарда Кларка&lt;/a&gt;
       &lt;/figcaption&gt;
     &lt;/figure&gt;
 </pre>
@@ -393,7 +393,7 @@
     &lt;form action="demo_keygen.asp" method="get"&lt;
      Имя пользователя: &lt;input type="text" name="usr_name"&gt;
      Шифрование: &lt;keygen name="защита"&gt;
-     &lt;input type="submit"&gt; 
+     &lt;input type="submit"&gt;
     &lt;/form&gt;
 </pre>
                 </div>
@@ -444,7 +444,7 @@
                 </div>
             </div>
 
-            
+
             <p>
                 <span class="tag">&lt;rp&gt;&lt;/rp&gt;</span>
                 — теги предназначены для браузеров которые не поддерживают теги <span class="simple-tag">ruby</span>.
@@ -482,7 +482,7 @@
                 <span class="tag">&lt;source /&gt;</span>
                 — тег предназначен для указания пути к аудио/видео файлам, находится внутри тегов <span class="simple-tag">audio</span> и <span class="simple-tag">video</span>.
             </p>
-            
+
             <br>
 
             <p>
@@ -612,8 +612,8 @@
                     .on(
                         'click',
                         function(event) {
-                            Menu.activateMenu(event);
                             event.preventDefault();
+                            Menu.activateMenu(event);
                             const navEl = document.querySelector('.nav-link');
                             navEl.style.display = navEl.style.display === 'flex' ? 'none' : 'flex';
                         }
@@ -642,7 +642,9 @@
         for(let i = 1; i < 4; i++) {
             document.getElementById(`link${i}`).addEventListener('click', function () {
                 const event = new Event('click');
-                document.querySelector('.menu').dispatchEvent(event);
+                if (window.innerWidth <= 768) {
+                    document.querySelector('.menu').dispatchEvent(event);
+                }
                 document.querySelector(`#id${i}`).scrollIntoView({
                     behavior: 'smooth'
                 });
