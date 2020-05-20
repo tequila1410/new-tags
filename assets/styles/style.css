@@ -112,6 +112,7 @@ main .preview__main .title_header {
 
 main .preview__main .title_desc {
     font-size: 41px;
+    padding-top: 16px;
 }
 
 main .preview__main .logo img {
@@ -133,7 +134,7 @@ main .preview__description p {
 }
 
 .information {
-    padding: 90px 260px 7px;
+    padding: 57px 260px 7px;
     color: #0E2A37;
     background: rgba(245, 241, 231, 0.4);;
 }
@@ -194,7 +195,7 @@ main .preview__description p {
 }
 
 hr.hr1 {
-    margin-top: 50px;
+    margin-top: 57px;
     border: 2px solid #119DA4;
 }
 
@@ -208,7 +209,7 @@ hr.hr2 {
     align-items: center;
     color: #F5F1E7;
     padding: 0 260px;
-    height: 175px;
+    height: 85px;
     background: #032535;
     box-shadow: 0 3px 30px #0A1826;
 }
@@ -260,7 +261,16 @@ hr.hr2 {
     }
 
     main .preview__main {
-        padding: 60px 15px;
+        padding: 85px 15px 50px;
+    }
+
+    main .preview__main .title_header {
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    main .preview__main .title_desc {
+        font-size: 24px;
     }
 
     main .preview__main .logo {
@@ -274,6 +284,8 @@ hr.hr2 {
     main .preview__description p {
         padding: 20px 10px;
     }
+
+
 
     .information {
         padding: 70px 15px 7px;
@@ -319,10 +331,10 @@ hr.hr2 {
     top: 0;
 }
 .menu-middle {
-    top: 10px;
+    top: 12px;
 }
 .menu-bottom {
-    top: 20px;
+    top: 24px;
 }
 .menu-top-click {
     backface-visibility: hidden;
